@@ -15,7 +15,7 @@ export default function HomeScreen() {
   async function setup() {
     await TrackPlayer.setupPlayer({});
     await TrackPlayer.updateOptions({
-      stopWithApp: false,
+      stopWithApp: true,
       capabilities: [
         TrackPlayer.CAPABILITY_PLAY,
         TrackPlayer.CAPABILITY_PAUSE,
